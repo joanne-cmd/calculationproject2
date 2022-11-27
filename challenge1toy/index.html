@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student calculator</title>
+    <style>
+        #student{
+            width: 30%;
+            margin: 0 auto;
+            background-color:  rgb(155, 26, 153);
+            padding: 8%;
+            border-radius: 10%;
+        }
+        h1{
+            text-align: center;
+            color: antiquewhite;
+            font-weight: bolder;
+        }
+        #center{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 8px;
+            margin-top: 8%;
+            
+        }
+        input{
+            line-height: 30px;
+            background-color: transparent;
+            border: solid 1px black;
+            border-radius: 0.5em;
+            text-align: center;
+            font-size: 1.4em;
+            padding: 5px;
+        }
+        button{
+            line-height: 30px;
+            background-color: aqua;
+            border-radius: 0.5em;
+            padding: 5px;
+            font-weight: bolder;
+            font-size: 1.4em;
+        }
+        #out{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 8%;
+            color: beige;
+            font-size: xx-large;
+
+
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="student">
+        <h1>Students Grading System</h1>
+        <div id="center">
+            <input id="marks" type="number"  placeholder="enter your marks">
+        <button id="mrk" onclick="handleClick(event)">Calculate</button>
+        </div>
+        <div id="out">A</div>
+    </div>
+   
+
+   <script src="./index.js"></script> 
+</body>
+</html>

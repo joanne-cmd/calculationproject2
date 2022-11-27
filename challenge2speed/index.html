@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Detector</title>
+    <style>
+        html{
+            background-color: rgb(102, 67, 88);
+        }
+        #test{
+            width: 30%;
+            margin: 0 auto;
+            background-color:  rgb(104, 14, 122);
+            padding: 8%;
+            border-radius: 10%;
+            margin-top: 50%;
+            transform: translateY(-50%);
+        }
+        h1{
+            text-align: center;
+            color: antiquewhite;
+            font-weight: bolder;
+            
+        }
+        input{
+            line-height: 30px;
+            background-color: transparent;
+            border: solid 1px black;
+            border-radius: 0.5em;
+            text-align: center;
+            font-size: 1.4em;
+            padding: 5px;
+        }
+        button{
+            line-height: 30px;
+            background-color: aqua;
+            border-radius: 0.5em;
+            padding: 5px;
+            font-weight: bolder;
+            font-size: 1.4em;
+        }
+        #point{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 8%;
+            color: beige;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        #ted{
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+            padding: 8px;
+             
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="test">
+        <h1>Speed Detector</h1>
+        <div id="ted">
+            <input min="0" id="speed" value="0" type="number" placeholder="enter speed">
+            <button onclick="handleClick(event)" >Submit</button>
+        </div>
+        <div id="point">Test</div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

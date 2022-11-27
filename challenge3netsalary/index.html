@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netPay</title>
+    <style>
+        #cal{
+            width: 50%;
+            border: solid 1px black;
+            margin: 0 auto;
+            background-color:rgb(185, 134, 39);
+            border-radius: 2%;
+        }
+        h1{
+            text-align: center;
+        }
+        #change input{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 2em;
+        
+        }
+        #net div{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 2em;
+        }
+        .labels{
+            
+            display: inline-block;
+            font-weight: bolder;
+        }
+        #change{
+            font-size: medium;
+            font-weight: bolder;
+        }
+        p{
+            font-weight: bolder;
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cal">
+        <h1>Net Salary Calculator</h1>
+        <P>Welcome to the net Salary Calculator, 
+            please enter the required details</P>
+        <div id="change">
+            <input id="basic" oninput="changeOnSpot(event)"type="number" placeholder="Enter Salary">
+            <input class="allowance1" oninput="changeOnSpot(event)"type="number" placeholder="enter your allowance">
+            <input class="allowance1" oninput="changeOnSpot(event)"type="number" placeholder="enter your allowance">
+        </div>
+        <div id="net">
+            <div><div class="labels">NHIF</div><span id="nhif"></span></div>
+            <div><div class="labels">NSSF</div><span id="nssf"></span></div>
+            <div><div class="labels">Payee</div><span id="Payee"></span></div>
+            <div><div class="labels">Net Salary</div><span id="netsalary"></span></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
